@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe 'Anagram' do 
   describe '.new' do
     it 'has an initialize method that takes in a word' do
@@ -13,7 +15,7 @@ describe 'Anagram' do
   
     it 'detects a simple anagram' do
       ba = Anagram.new('ba')
-      matches = ba.match(%w[ab abc bac'])
+      matches = ba.match(%w[ab abc bac])
       expect(matches).to eq(['ab'])
     end
   
